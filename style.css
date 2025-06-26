@@ -1,0 +1,148 @@
+    .custom-dropdown {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease;
+      padding-left: 0;
+      margin: 0;
+    }
+
+    .custom-dropdown.show {
+      max-height: 500px;
+    }
+
+    .custom-dropdown li {
+      padding: 5px 15px;
+    }
+
+    .offcanvas-body ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .offcanvas-body li a {
+      display: block;
+      padding: 10px;
+      text-decoration: none;
+      color: #000;
+    }
+
+    .offcanvas-body li a:hover {
+      background-color: #f0f0f0;
+    }
+
+
+.hyundai-line {
+  position: relative;
+  display: inline-block;
+}
+
+.hyundai-line::after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left:0;                /* ابدأ من الربع */
+  width: 50%;               /* الخط يغطي نصف الكلمة فقط */
+  height: 4px;
+  background-color: #007bff;
+  border-radius: 2px;
+}
+
+.hook-word{
+  font-size: 60px;
+}
+
+.hero-image {
+  perspective: 1000px; /* مهم جدًا لخلق عمق 3D */
+  display: inline-block;
+  
+}
+
+.hero-image img {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  border-radius: 50px;
+}
+
+.hero-image:hover img {
+  transform: rotateY(-15deg) rotateX(-0) scale(1.03);
+}
+
+
+
+.button-sec1 {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: inline-block;
+}
+
+.button-sec1:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 220, 0.1); /* ظل خفيف */
+}
+
+.bg-dark-primary{
+    background-color:#011532;
+}
+
+
+.offcanvas a{
+  transition: 0.4s;
+
+}
+
+.offcanvas a:hover{
+  color: blue!important;
+  
+}
+
+
+
+
+  .section4 img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.4s ease;
+    cursor: pointer;
+    
+  }
+
+  .section4 img:hover {
+    transform: scale(1.03);
+  }
+
+  .section4 a{
+    text-decoration: none;
+  }
+
+
+.section4 h5{
+  text-align: center;
+  margin-top: 2px;
+}
+
+#upBtn {
+  width: 60px;
+  position: fixed;
+  bottom: 60px;
+  right: 10px;
+  display: block;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.7s ease, visibility 0.7s ease;
+  cursor: pointer;
+  border-radius: 30px;
+}
+#upBtn.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.backBtn{
+  position: fixed;
+  top: 60px;
+  left: 40px;
+  text-decoration: none;
+  color: red;
+  font-size: 20px;
+}

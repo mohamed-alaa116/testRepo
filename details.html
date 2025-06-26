@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Offcanvas Example</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body style="background-color: rgb(2, 2, 27);" class="text-white">
+  <div>
+    <div class="container">
+      <a href="index.html" class="backBtn" style="border:2px red solid;border-radius: 20px; padding: 3px;"><b>Back</b></a>
+
+      <h2 class="text-center text-primary p-5">Car Details</h2>
+
+      <div class="about-car row">
+        <div class="col-12 col-lg-6">
+          <img src="hyundai/elentra.jpg" class="img-fluid" style="width: 100%; height: auto; object-fit: cover;">
+        </div>
+
+        <div class="description col-12 col-lg-6 row">
+
+          <div class="col-6">
+            <h3>🔹 General Information:</h3>
+            <ul class="text-white">
+              <li>Model: Hyundai Elantra 2025</li>
+              <li>Class: Compact Sedan</li>
+              <li>Country of Origin: South Korea</li>
+            </ul>
+          </div>
+
+          <div class="col-6">
+            <h3>🔹 Engine & Performance:</h3>
+            <ul>
+              <li>1.6L 4-cylinder DOHC engine</li>
+              <li>Power Output: 127 horsepower</li>
+              <li>Torque: 157 Nm</li>
+              <li>Transmission: 6-speed automatic</li>
+              <li>Drivetrain: Front-Wheel Drive (FWD)</li>
+              <li>Fuel Consumption: 6.7 L / 100 km</li>
+              <li>Fuel Tank Capacity: Approximately 50 liters</li>
+            </ul>
+          </div>
+
+          <div class="col-6">
+            <h3>🔹 Safety Features:</h3>
+            <ul>
+              <li>Anti-lock Braking System (ABS)</li>
+              <li>Electronic Brakeforce Distribution (EBD)</li>
+              <li>Electronic Stability Program (ESP)</li>
+              <li>Front airbags (Driver & Passenger)</li>
+              <li>Rear parking sensors</li>
+              <li>Rearview camera (available in higher trims)</li>
+            </ul>
+          </div>
+
+          <div class="col-6">
+            <h3>🔹 Interior & Technology:</h3>
+            <ul>
+              <li>8-inch touchscreen with Apple CarPlay & Android Auto</li>
+              <li>6-speaker sound system</li>
+              <li>Automatic climate control</li>
+              <li>Multifunction steering wheel</li>
+              <li>Cruise control</li>
+              <li>Push-button start (in higher trims)</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Carousel -->
+      <div class="container py-5">
+        <div id="carouselExampleControls" class="carousel slide mx-auto" data-bs-ride="carousel" style="max-width: 800px;">
+          <div class="carousel-inner bg-dark rounded overflow-hidden">
+            <div class="carousel-item active" style="background-color: rgb(2, 2, 27);">
+              <img src="hyundai/elentra.jpg" class="d-block w-100" alt="..." style="height: 400px; object-fit: contain;">
+            </div>
+            <div class="carousel-item" style="background-color: rgb(2, 2, 27);">
+              <img src="hyundai/elentra2.jpg" class="d-block w-100" alt="..." style="height: 400px; object-fit: contain;">
+            </div>
+            <div class="carousel-item" style="background-color: rgb(2, 2, 27);">
+              <img src="hyundai/elentra3.jpg" class="d-block w-100" alt="..." style="height: 400px; object-fit: contain;">
+            </div>
+            <div class="carousel-item" style="background-color: rgb(2, 2, 27);">
+              <img src="hyundai/elentra4.jpg" class="d-block w-100" alt="..." style="height: 400px; object-fit: contain;">
+            </div>
+          </div>
+
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+
+
+
+
+      <!-- Button trigger modal -->
+<!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Launch demo modal
+</button> -->
+
+      <div class="d-flex justify-content-center">
+      <button class="btn btn-primary w-50 mb-3" data-bs-toggle="modal"  data-bs-target="#exampleModal">Order Now</button>
+
+      </div>
+
+<!-- Modal -->
+<div class="modal fade w-sm-75" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-primary" id="exampleModalLabel">enter your data</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <input type="text" placeholder="your name..." class="w-100 mb-2 rounded-5 py-3">
+        <input type="text" placeholder="your address..." class="w-100 mb-2 rounded-5 py-3">
+        <input type="text" placeholder="your phone number..." class="w-100 mb-2 rounded-5 py-3">
+        <input type="text" placeholder="your id number..." class="w-100 mb-2 rounded-5 py-3">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">send</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+    </div>
+
+
+  </div>
+
+  <!-- AOS Init -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+  <!-- Bootstrap and Main JS -->
+  <script src="main.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
